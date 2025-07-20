@@ -1,0 +1,178 @@
+/* =========== hero section ========== */
+
+/* to create the gradient overlay on the background */
+.overlay {
+    border-image: fill 1 linear-gradient(transparent, black);
+}
+
+section.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    /* replace this height with padding */
+    /* height: 570px; */
+    padding: 100px 10px;
+    background-image: url(../images/bg-imgs/bruno-hojlund-amad-unrelated.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: cover;
+    color: #eee;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(3.8rem, 11vw, 6rem);
+}
+
+.hero-text .manchester {
+    color: rgb(219, 27, 27);
+    text-shadow: 1px 0 1px white;
+}
+
+.hero-text .united {
+    color: transparent;
+    -webkit-text-stroke: .1px white;
+}
+
+.hero-text p {
+    padding: 6px 0;
+}
+
+.hero-text h2 {
+    padding-top: 18px;
+}
+
+.hero-text h2 span {
+    color: rgb(219, 27, 27);
+}
+
+/* ======= matches section ====== */
+
+/* ----- slider ---- */
+
+.matches h2 {
+    padding: 25px 5%;
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    background-color: #eee;
+    padding: 25px;
+    margin: 20px 1%;
+    margin-right: 0;
+    border-left: 4px solid ;
+}
+
+/* -------- match card ------- */
+
+.match-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.competition-logo {
+    height:130px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.competition-logo.friendly p {
+    width: 100%;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: rgb(123, 57, 57);
+    text-align: center;
+}
+
+/* the europa league logo i have got is too large. to fix it: */
+img.europa {
+    width:84px;
+    height: auto;
+}
+
+.match-date {
+    font-size: .8rem;
+    color: hsl(0, 100%, 58%);
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.result-container * {
+    padding-top: 5px;
+}
+
+.result {
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: rgb(101, 24, 38);
+}
+
+.match-status {
+    padding-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: .12rem;
+}
+
+.win-status {
+    width: 40px;
+    height: 5px;
+    border-radius: 16px;
+}
+
+/* color codes of win, lose, draw and pending games*/
+.win-status.pending {
+    background-color: grey;
+}
+.win-status.win {
+    background-color: yellowgreen;
+    box-shadow: 0 0 4px yellowgreen;
+}
+.win-status.lose {
+    background-color: red;
+    box-shadow: 0 0 4px red;
+}
+.win-status.draw {
+    background-color: blue;
+    box-shadow: 0 0 4px blue;
+}
+
+.stat-button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color .3s linear;
+}
+
+.stat-button:hover {
+    background-color: red;
+    color: #eee;
+}
+
+.stat-button.pending:hover {
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
