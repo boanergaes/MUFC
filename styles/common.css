@@ -90,7 +90,7 @@ header a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.6rem;
     font-weight: 800;
-    border: 2px solid white;
+    border: 2px solid red;
     padding: 2px 8px;
     border-radius: 0 0 15px;
 }
@@ -175,3 +175,101 @@ input:focus {
     opacity: .8;
 }
 
+/* ===== footer ====== */
+
+footer {
+    background-color: hsla(0, 0%, 12%);
+    color: #eee;
+    padding-bottom: 80px;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: start;
+    gap: 5vw;
+    padding: 40px 5%;
+}
+
+/* horizontal separation */
+.hr-c {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    width: 85%;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.lower-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 5%;
+}
+
+.lower-footer p {
+    padding-bottom: 10px;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+}
+
+.contacts img {
+    width: 20px;
+    transition: opacity .25s linear;
+}
+
+.contacts img:hover {
+    opacity: .8;
+}
+
+.copyryt {
+    padding: 0;
+    padding-top: 20px;
+    font-weight: 200;
+    opacity: .86;
+}
+
+/* to top button */
+.to-top {
+    text-decoration: none;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    /* width and height are interchanged because of rotation */
+    width: 54px;
+    height: 70px;
+    margin-right: 22px;
+    /* since the button icon is typed directely in the
+    html and rotated -90deg, padding right becomes padding bottom */
+    padding-bottom: 9px;
+    font-size: 2rem;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    background-image: linear-gradient(to top right, black, red);
+    box-shadow: 0 0 4px red;
+    color: white;
+    transition: transform .2s ease-in-out;
+}
+
+.to-top:hover {
+    transform: translateY(-5px) rotate(-90deg);
+}

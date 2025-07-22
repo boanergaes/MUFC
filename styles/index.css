@@ -1,3 +1,24 @@
+/* properties common all over the page */
+
+h2 {
+    padding: 25px 10%;
+    padding-bottom: 5px;
+}
+
+section button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color .3s linear;
+}
+
+section button:hover {
+    background-color: red;
+}
+
 /* =========== hero section ========== */
 
 /* to create the gradient overlay on the background */
@@ -45,6 +66,7 @@ section.hero {
 
 .hero-text h2 {
     padding-top: 18px;
+    padding-left: 0;
 }
 
 .hero-text h2 span {
@@ -55,9 +77,8 @@ section.hero {
 
 /* ----- slider ---- */
 
-.matches h2 {
-    padding: 25px 5%;
-    padding-bottom: 5px;
+section.matches {
+    position: relative;
 }
 
 .slider {
@@ -69,6 +90,18 @@ section.hero {
     margin: 20px 2%;
     margin-right: 0;
     border-left: 4px solid black;
+}
+
+/* to have the blurring effect at the end of slider.
+   position is relative to section.matches  */
+.slider::after {
+    content: '';
+    width: 100px;
+    height: 416px;
+    position:absolute;
+    right: 0;
+    top: 81.5px;
+    background-image: linear-gradient(to right, transparent, #eee 80%);
 }
 
 /* -------- match card ------- */
@@ -117,9 +150,6 @@ img.europa {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-}
-
-.result-container * {
     padding-top: 5px;
 }
 
@@ -137,7 +167,7 @@ img.europa {
 
 .win-status {
     width: 40px;
-    height: 5px;
+    height: 3px;
     border-radius: 16px;
 }
 
@@ -151,26 +181,15 @@ img.europa {
 }
 .win-status.lose {
     background-color: red;
-    box-shadow: 0 0 4px red;
+    box-shadow: 0 0 3px red;
 }
 .win-status.draw {
     background-color: blue;
-    box-shadow: 0 0 4px blue;
+    box-shadow: 0 0 2px blue;
 }
 
 /* MATCH PREVIEW button */
-.stat-button {
-    padding: 12px 18px;
-    border-radius: 8px;
-    border: 1px solid;
-    font-size: .8rem;
-    font-weight: 600;
-    margin-top: 20px;
-    transition: background-color .3s linear;
-}
-
 .stat-button:hover {
-    background-color: red;
     color: #eee;
 }
 
@@ -183,11 +202,17 @@ img.europa {
 /* ===== youtube vedio form the man u channel */
 
 .yt-video {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0 50px 0;
+    position: relative;
+}
+
+.yt-video h2 {
+    position: absolute;
+    left: 0;
+    top: 18px;
 }
 
 .yt-video iframe {
@@ -200,4 +225,107 @@ img.europa {
     padding: 10px 0;
     background-color: hsl(0, 0%, 90%);
     font-size: clamp(.7rem, 4vw, 1.79rem);
+}
+
+/* ====== articles section ====== */
+
+/* --------- article card ------------ */
+
+section.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: min(30px, 2%);
+    gap: 20px;
+}
+
+article {
+    flex-shrink: 1;
+    position: relative;
+    width: min-content;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 20%);
+}
+
+/* to have a gradient between the text and image */
+article .article-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(transparent, black 96%);
+}
+
+/* to have the image magnifying effect when hovering */
+.img-wrapper {
+    transition: scale .39s ease-in;
+}
+/* hover on this because this is sitting on top of the image */
+.img-wrapper:hover {
+    scale: 1.02;
+}
+
+article img {
+    max-width: 500px;
+    max-height: 280px;
+    min-width: 200px;
+}
+
+
+.article-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 15px 10px;
+    padding-top: 0;
+}
+
+article h1 {
+    font-size: 1.7rem;
+}
+
+.read-more-button {
+    background-color: transparent;
+    color: white;
+}
+
+.read-more-button:hover {
+    border: 1px solid red;
+}
+
+.more-articles-button {
+    background-image: linear-gradient(to right top, red, black);
+    color: white;
+    border: none;
+    transition: transform .2s linear;
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 10%);
+}
+.more-articles-button:hover {
+    transform: scaleX(1.2);
+    background-color: rgb(198, 13, 13);
+}
+
+/* ==== sponsors section ==== */
+
+.sponsor-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 100px 5%;
+}
+
+.sponsor-slider img {
+    height: 36px;
+    width: auto;
 }

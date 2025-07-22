@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: min-content;
+    overflow: hidden;
+    transition: scale .4s linear;
+}
+
+.w {
+    width: min-content;
+    overflow: hidden;
+    position: relative;
+}
+
+.container:hover {
+    scale: 1.05;
+}
+
+img {
+    max-width: 500px;
+}
+
+img:hover {
+    scale: 1.1;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: white;
+}
+
+.i {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    background-image: linear-gradient(transparent, black);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
