@@ -23,16 +23,16 @@ header {
     top: 0;
 }
 
-.overlay-top {
-    border-image: fill 1 linear-gradient(hsla(0, 0%, 0%, .3), hsla(0, 0%, 0%, 1));
-}
 
+/* !!!!!! REMOVE THIS !!!!!! */
 .above-all {
-    height: 170px;
-    width: 100%;
+    display: none;
+    height: 110px;
     background-color: white;
-    background-image: url(../images/bg-imgs/collage-of-players.jpg);
-    background-position: 50% 15%;
+    background-image: url(../images/bg-imgs/old-trafford-stadium.webp);
+    background-position: center;
+    background-size: cover;
+    border-image: fill 1 linear-gradient(hsla(0, 0%, 0%, .1), hsla(0, 0%, 0%, .6));
 }
 
 header a {
@@ -41,6 +41,10 @@ header a {
 }
 
 .upper-header {
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,13 +103,15 @@ header a {
     /* lower section of the header */
 
 .lower-header {
+    position: relative;
+    top: 95px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px min(4rem, 5%);
-    /* background-color: red; */
-    background-image: linear-gradient(to left, black 10%, rgb(219, 27, 27));
-    border-top: 1px solid red;
+    background-color: hsla(0, 0%, 0%, .2);
+    /* background-image: linear-gradient(to left, black 10%, rgb(219, 27, 27)); */
 }
 
 .search-section {
@@ -162,6 +168,7 @@ input:focus {
 }
 
 .author span {
+    display: none;
     background-color: #08465d;
     border-radius: 16px;
     padding: 4px 8px;
@@ -215,6 +222,7 @@ hr {
 
 .lower-footer {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 5%;
@@ -269,10 +277,19 @@ hr {
     background-image: linear-gradient(to top right, black, red);
     box-shadow: 0 0 4px red;
     color: white;
-    transition: transform .2s ease-in-out;
 }
 .to-top:hover {
-    transform: translateY(-5px) rotate(-90deg);
+    animation: upDown 1.4s linear infinite;
+}
+
+@keyframes upDown {
+    50% {
+        transform: translateY(-5px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-90deg);
+    }
 }
 
 @media screen and (max-width: 728px) {
@@ -307,4 +324,11 @@ hr {
         justify-content: end;
     }
 
+}
+
+/* this is for making the links visible for users that cant hover(phone users) */
+@media screen and (max-width: 568px) {
+    footer a {
+        text-decoration: underline;
+    }
 }
