@@ -57,13 +57,46 @@ button {
     box-sizing: border-box;
 }
 
-div {
-    border: 5px solid black;
-    height: 300px;
-    min-width: 280px;
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.l {
+img {
+    max-width: 500px;
+    max-height: 280px;
+    /* min-width: 320px; */
+    /* width: 100%; */
+}
+
+div {
+    flex-shrink: 1;
+    /* border: 5px solid black; */
+    /* height: 350px; */
+    width: min-content;
+    min-width: 320px;
+    /* overflow: hidden; */
+    position: relative;
+}
+p {
+    /* text-overflow: clip; */
+    width: 100%;
+}
+h1 {
+    width: 100%;
+}
+.i {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: blue;
+    width: 100%;
+}
+
+/* .l {
     width: 400px;
 }
 
@@ -73,12 +106,4 @@ div {
 
 .s {
     width: 300px;
-}
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
+} */

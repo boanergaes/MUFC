@@ -232,6 +232,7 @@ img.europa {
 /* --------- article card ------------ */
 
 section.articles {
+    /* necessary to make the more articles button at center */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,15 +245,10 @@ section.articles {
     padding: min(30px, 2%);
     gap: 20px;
 }
-/* ********************************************************************************* */
-/* ********************************************************************************* */
+
 article {
-    display: flex;
-    flex-shrink: 1;
     position: relative;
-    max-width: min-content;
     overflow: hidden;
-    /* font-size: clamp(.8rem, 1.03vw, 1.1rem); */
     border-radius: 8px;
     box-shadow: 1px 1px 5px hsl(0, 0%, 20%);
 }
@@ -270,22 +266,20 @@ article .article-overlay {
 /* to have the image magnifying effect when hovering */
 .img-wrapper {
     transition: scale .39s ease-in;
-    flex-shrink: 1;
 }
-/* hover on this because this is sitting on top of the image */
+/* hover on .img-wrapper because it is sitting on top of the image */
 .img-wrapper:hover {
-    scale: 1.02;
+    scale: 1.04;
 }
 
 article img {
     max-width: 500px;
     max-height: 280px;
-    min-width: 350px;
+    min-width: 320px;
 }
 
 
 .article-text {
-    flex-shrink: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -294,15 +288,8 @@ article img {
     padding-top: 0;
 }
 
-.article-text p {
-    text-wrap: wrap;
-}
-
-/* ******************************************************** */
-/* ******************************************************** */
 article h1 {
-    /* font-size: 1.7rem; */
-    font-size: clamp(1.17em, 8vw,1.7rem);
+    font-size: 1.7rem;
 }
 
 .read-more-button {
@@ -342,8 +329,37 @@ article h1 {
     width: auto;
 }
 
+/* queries for you tube video */
+@media screen and (max-width: 640px) {
+    .yt-video iframe {
+        width: 95%;
+        height: 45vw;
+    }
+    .yt-video h1 {
+        width: 95%;
+    }
+}
+
+/* queries for article */
 @media screen and (max-width: 534px) {
     article .img-container img {
-        width: 100px;
+        max-width: 400px;
+    }
+    article .article-text h1 {
+        font-size: 1.65rem;
+    }
+    article .article-text p {
+        font-size: .94rem;
+    }
+}
+@media screen and (max-width: 408px) {
+    article .img-container img {
+        width: 198px;
+    }
+    article .article-text h1 {
+        font-size: 1.17rem;
+    }
+    article .article-text p {
+        font-size: .84rem;
     }
 }

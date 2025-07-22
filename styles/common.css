@@ -195,6 +195,7 @@ footer a:hover {
 
 .upper-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     gap: 5vw;
     padding: 40px 5%;
