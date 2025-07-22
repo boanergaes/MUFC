@@ -9,6 +9,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     height: 100dvh;
+    font-size: clamp(1rem, );
 }
 
 button {
@@ -269,7 +270,40 @@ hr {
     color: white;
     transition: transform .2s ease-in-out;
 }
-
 .to-top:hover {
     transform: translateY(-5px) rotate(-90deg);
+}
+
+@media screen and (max-width: 728px) {
+    .upper-header nav {
+        display: none;
+    }
+    .upper-header .menu-section {
+        display: block;
+    }
+    .menu {
+        background: none;
+        border: none;
+        border-radius: 0;
+        transition: transform .15s linear;
+    }
+    .menu:hover {
+        transform: scale(1.07);
+    }
+    .menu img {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .search-section {
+        display: none;
+    }
+    .icon-section .search {
+        display: block;
+    }
+    .lower-header {
+        justify-content: end;
+    }
+
 }

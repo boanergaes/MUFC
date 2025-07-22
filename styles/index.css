@@ -244,12 +244,15 @@ section.articles {
     padding: min(30px, 2%);
     gap: 20px;
 }
-
+/* ********************************************************************************* */
+/* ********************************************************************************* */
 article {
+    display: flex;
     flex-shrink: 1;
     position: relative;
-    width: min-content;
+    max-width: min-content;
     overflow: hidden;
+    /* font-size: clamp(.8rem, 1.03vw, 1.1rem); */
     border-radius: 8px;
     box-shadow: 1px 1px 5px hsl(0, 0%, 20%);
 }
@@ -267,6 +270,7 @@ article .article-overlay {
 /* to have the image magnifying effect when hovering */
 .img-wrapper {
     transition: scale .39s ease-in;
+    flex-shrink: 1;
 }
 /* hover on this because this is sitting on top of the image */
 .img-wrapper:hover {
@@ -276,11 +280,12 @@ article .article-overlay {
 article img {
     max-width: 500px;
     max-height: 280px;
-    min-width: 200px;
+    min-width: 350px;
 }
 
 
 .article-text {
+    flex-shrink: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -289,8 +294,15 @@ article img {
     padding-top: 0;
 }
 
+.article-text p {
+    text-wrap: wrap;
+}
+
+/* ******************************************************** */
+/* ******************************************************** */
 article h1 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    font-size: clamp(1.17em, 8vw,1.7rem);
 }
 
 .read-more-button {
@@ -328,4 +340,10 @@ article h1 {
 .sponsor-slider img {
     height: 36px;
     width: auto;
+}
+
+@media screen and (max-width: 534px) {
+    article .img-container img {
+        width: 100px;
+    }
 }
