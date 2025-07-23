@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Agdasima:wght@400;700&family=Anton&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 20%);
+    color: #eee;
+}
+
+section.title {
+    padding: 20px 40px;
+    padding-top: 100px;
+    border-bottom: 1px solid #eee;
+} 
+
+section.main {
+    /* height: 100dvh; */
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.main .bench {
+    position: sticky;
+    top: 96.7px;
+    border-right: 1px solid #eee;
+    height: 86vh;
+    /* height: 100%; */
+    overflow-y: scroll;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.squad-list li {
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+    padding-left: 4px;
+    padding-top: 8px;
+}
+
+.squad-list li:hover {
+    background-color: hsl(0, 0%, 18%);
+}
+
+/* ====== pitch and stats section ======== */
+
+.pitch-stats {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+/* ======== the pitch ======== */
+
+.pitch-container {
+    /* border-right: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pitch {
+    width: 60%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows:  repeat(8, 1fr);
+}
+
+.pitch img.field {
+    width: 100%;
+    min-width: 300px;
+    /* max-width: 500px; */
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+/* 
+to make the player names appear when hovered over the pawns,
+=> i put their names in the pawn div, 
+=> the names paragraph position: absolute relative to pawn
+ - the entire area around the pawn (width and height of the name text)
+   serves as a hover area.
+*/
+
+.pawn {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    color: #eee;
+    border-radius: 50%;
+    align-self: center;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.pawn img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.player-info {
+    position: absolute;
+    bottom: -25px;
+    width: max-content;
+    height: 75px;
+    display: flex;
+    align-items: end;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.player-info span {
+    background-color: hsl(0, 0%, 0%, .5);
+    padding: 0 8px;
+    border-radius: 12px;
+}
+.player-info:hover {
+    opacity: 1;
+}
+
+.gk {
+    grid-column: 5;
+    grid-row: 7;
+    align-self: end;
+}
+
+.lcb {
+    grid-column: 3;
+    grid-row: 6;
+    align-self: end;
+}
+
+.ccb {
+    grid-column: 5;
+    grid-row: 6;
+    align-self: end;
+}
+.rcb {
+    grid-column: 7;
+    grid-row: 6;
+    align-self: end;
+}
+.ldm {
+    grid-column: 4;
+    grid-row: 5;
+}
+.rdm {
+    grid-column: 6;
+    grid-row: 5;
+}
+.lwb {
+    grid-column: 2;
+    grid-row: 4;
+}
+.rwb {
+    grid-column: 8;
+    grid-row: 4;
+}
+.lam {
+    grid-column: 4;
+    grid-row: 3;
+    align-self: start;
+}
+.ram {
+    grid-column: 6;
+    grid-row: 3;
+    align-self: start;
+}
+.cf {
+    grid-column: 5;
+    grid-row: 2;
+    align-self: start;
+}
+
+/* ===== team stats section ============= */
+
+.stats-container {
+    padding: 20px;
+}
+
+.stats-container .title {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    padding-bottom: 60px;
+    font-family: Agdasima;
+}
+.title h1 {
+    font-size: 2.4rem;
+}
+.stats-container .title p {
+    padding-bottom: 5px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 70px;
+    height: 100%;
+}
+
+.comp-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+}
+
+.comp-title img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+/*  */
+
+.stat-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.stat-card {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+h1, h2 {
+    font-family: Agdasima, sans-serif;
+}
+
+.big {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: Agdasima, sans-serif;
+}
+.small {
+    font-family: Agdasima, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1220px) {
+    .pitch-container {
+        align-items: start;
+        padding-left: 12%;
+    }
+}
+
+@media screen and (max-width: 1164px) and (min-width: 961px) {
+    .stat-card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    .stats-container {
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .pitch-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes shrink {
+    to {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .pawn {
+        animation: shrink .3s linear 1;
+        width: 40px;
+        height: 40px;
+    }
+
+    .pawn img {
+        animation: shrink .3s linear 1;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .stat-card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+@keyframes shiftLeft {
+    to {
+        /* the number is the current padding - the padding set by @media */
+        /* the above well passed the position i want, found the right one by trial and error */
+        transform: translateX(-2px);
+    }
+}
+@media screen and (max-width: 653px) {
+    .pitch-container {
+        animation: shiftLeft .3s ease-in 1;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    section.main {
+        grid-template-columns: 160px 1fr;
+        /* .s */
+    }
+    .main .bench {
+        padding: 8px;
+    }
+    .pitch-container {
+        align-items: start;
+        padding-left: 4vw;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    section.main {
+        grid-template-columns: 1fr;
+    }
+    .pitch-container {
+        position: absolute;
+        top: 250px;
+    }
+    .main .bench {
+        position: absolute;
+        top: 870px;
+        width: 100%;
+        height: fit-content;
+        border: none;
+        align-items: center;
+        overflow: visible;
+    }
+    .main .bench>* {
+        width: 80%;
+    }
+
+    .stats {
+        gap: 12px;
+    }
+    .stats-container {
+        position: absolute;
+        top: 1700px;
+        border-top: 1px solid;
+        width: 100%;
+    }
+    .stats-container .title {
+        padding-bottom: 35px;
+    }
+
+
+    footer {
+        position: absolute;
+        top: 2560px;
+    }
+}

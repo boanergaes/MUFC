@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Agdasima:wght@400;700&family=Anton&display=swap');
+
 /* properties common all over the page */
+
+h1, h2, h3 {
+    font-family: Agdasima, sans-serif;
+}
 
 h2 {
     padding: 25px 10%;
