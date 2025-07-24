@@ -1,0 +1,118 @@
+section {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+    background-image: url(../images/bg-imgs/kobbie-and-team-celebration.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section * {
+    text-align: center;
+}
+
+.cta-card  {
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: fit-content;
+    padding: 30px 70px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,1);
+    background-image: linear-gradient(-45deg, rgb(35, 31, 31), rgb(107, 46, 29), rgb(201, 49, 7));
+}
+
+.cta-card a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    padding: 10px 40px;
+    background-color: hsl(0, 0%, 10%);
+    border: 1px solid #251515;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color .7s linear,
+        color .7s linear,
+        scale .7s linear;
+}
+
+.cta-card a:hover {
+    scale: 1.05;
+    background-color: transparent;
+    /* border-color: #eee; */
+    color: #eee;
+}
+
+@keyframes slideRight {
+    /* from {
+        transform: translateX(-20px) skew(-30deg);
+    } */
+    to {
+        transform: translateX(450px) skew(-30deg);
+    }
+}
+
+.color-slider {
+    background-color: rgb(255, 253, 253);
+    box-shadow: 
+        0 0 1px black, 
+        0 0 10px white, 
+        0 0 60px 5px yellow,
+        0 0 40px 10px white,
+        0 0 50px 13px white;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    animation: slideRight 1.8s linear infinite;
+}
+
+
+@media screen and (max-width: 670px) {
+    section {
+        padding: 5%;
+    }
+    .cta-card {
+        width: 70vw;
+    }
+    .cta-card a {
+        width: 300px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .cta-card {
+        width: 330px;
+    }
+    .color-slider {
+        display: none; 
+    }
+    .cta-card a {
+        background-color: transparent;
+        color: #eee;
+        border-color: #eee;
+    }
+}
+
+@media  screen and (max-width: 352px) {
+    section {
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+    }
+    .cta-card {
+        width: fit-content;
+        padding: 20px;
+    }
+    .cta-card a {
+        width: 200px;
+    }
+}
