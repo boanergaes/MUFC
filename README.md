@@ -6,6 +6,8 @@ With this project, I re-eforced the basic HTML and CSS concepts and it especiall
 
 # Project structure
     -MUFC
+        |-index.html   //home page
+        |
         |-images
         |    |-article-imgs
         |    |- bg-imgs
@@ -15,7 +17,6 @@ With this project, I re-eforced the basic HTML and CSS concepts and it especiall
         |    ...
         |
         |-pages
-        |   |-index.html   //home page
         |   |-contact.html  //contact page
         |   |-players.html   //squad page
         |   |-NaP.html      //temporary page for links whose page is not yet built
@@ -27,9 +28,9 @@ With this project, I re-eforced the basic HTML and CSS concepts and it especiall
         |   |-players.css
         |   |-Nap.css
 
-# Attributions:
+# Attributions
 
-## Icons:
+## Icons
     - menu-icon: 
 Icon by <a class="link_pro" href="https://freeicons.io/business-and-online-icons/menu-icon-icon">Raj Dev</a> on <a href="https://freeicons.io">freeicons.io</a>
 
@@ -44,12 +45,12 @@ Icon by <a class="link_pro" href="https://freeicons.io/free-mobile-app-icons/moo
 ## Images
 I found all images except for the icons attributed above on a direct Google search.
 
-## Tools used:
+## Tools used
 1. <a href="https://www.remove.bg/">remove.bg</a>: to remove backgrounds from pictures.
 2. <a href="https://designer.microsoft.com/">Microsoft Design</a>: to edit and crop pictures.
 3. Git, GitHub, VsCode
 
-## Article links:
+## Article links
 
 -cunha to utd - mun: <a href="https://www.manutd.com/en/news/detail/matheus-cunha-signs-for-man-utd-from-wolves">Source</a>
 
