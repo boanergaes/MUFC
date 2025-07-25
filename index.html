@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUFC</title>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <section class="lower-header">
+
+        <div class="search-section">
+
+            <button class="search">
+                <img src="./images/icons/search-icon-white-removebg-preview.png" alt="search-icon">
+            </button>
+
+            <input type="text" name="search" id="search" placeholder="search for players, matches, events...">
+        </div>
+
+        <div class="icon-section">
+
+            <button class="search">
+                <img src="./images/icons/search-icon-white-removebg-preview.png" alt="search-icon">
+            </button>
+
+            <button class="theme light">
+                <img height="32px" width="32px" src="./images/icons/light-mode-white-icon.png" alt="light-icon">
+            </button>
+
+            <!-- this will disappear when light mode is on -->
+            <button class="theme dark">
+                <img height="32px" width="32px" src="./images/icons/dark-mode-white-icon.PNG" alt="dark-icon">
+            </button>
+
+            <div class="author">
+                <a href="./pages/author.html" target="_blank"><span>boanergaes</span></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="top" class="hero overlay">
+        <div class="hero-img">
+            <img width="200px" height="200px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd logo">
+        </div>
+        <div class="hero-text">
+            <h1 class="manchester">MANCHESTER</h1>
+            <h1><span class="united">UNITED</span> FC.</h1>
+            <p>City of Manchester, United Kindome.</p>
+            <p>
+                Manchester United was formed as Newton Heath LYR in 1878 by <br> 
+                workers from the Lancashire and Yorkshire Railway. It was renamed <br>
+                Manchester United in 1902.
+            </p>
+            <h2>THE <span>RED</span> DEVILS</h2>
+        </div>
+    </section>
+
+    <section class="matches">
+        <h2>MATCHES</h2>
+        <div class="slider">
+            <!-- the match preview buttons redirect to livescore website page of the specific match -->
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img width="160px" src="./images/competition-logos/pl-summer-series-logo.jpg" alt="pl-summer-series-logo">
+                </div>
+                <p class="match-date">Mon Aug 4 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> _ _ _ </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/everton-f-c-premier-league-liverpool-f-c--removebg-preview.png" alt="everton">
+                    </div>
+                </div>
+                <p class="match-status">00:00</p>
+                <div class="win-status pending"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="">
+                    <button class="stat-button pending">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo friendly">
+                    <p>FRIENDLY</p>
+                </div>
+                <p class="match-date">Sat Jul 19 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> 0 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/leeds-United-Logo.PNG" alt="leeds-United-Logo">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status draw"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/club-friendlies/club-friendlies-2025/manchester-united-vs-leeds-united/1480708/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img width="160px" src="./images/competition-logos/Premier-League-logo.jpg" alt="Premier-League-logo">
+                </div>
+                <p class="match-date">Sun May 25 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> 2 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/aston-Villa-Logo-1-1155x770-removebg-preview.PNG" alt="aston-villa-logo">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status win"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/england/premier-league-2024-2025/manchester-united-vs-aston-villa/1250944/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img class="europa" width="160px" src="./images/competition-logos/UEFA_Europa_League_2024.png" alt="europa-league-logo">
+                </div>
+                <p class="match-date">Wed May 21 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/tottenham-Hotspur-Logo-removebg-preview.PNG" alt="tottenham-hotspurs">
+                    </div>
+                    <p class="result"> 1 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status lose"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/europa-league/knockout-round-play-offs/tottenham-hotspur-vs-manchester-united/1461487/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img width="160px" src="./images/competition-logos/Premier-League-logo.jpg" alt="Premier-League-logo">
+                </div>
+                <p class="match-date">Fri May 16 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/chelsea-logo-removebg-preview.PNG" alt="chelsea-logo">
+                    </div>
+                    <p class="result"> 1 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status lose"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/england/premier-league-2024-2025/chelsea-vs-manchester-united/1250936/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img width="160px" src="./images/competition-logos/Premier-League-logo.jpg" alt="Premier-League-logo">
+                </div>
+                <p class="match-date">Sun May 11 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> 2 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/west-ham-logo-removebg-preview.PNG" alt="west-ham-logo">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status lose"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/england/premier-league-2024-2025/manchester-united-vs-west-ham-united/1250924/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img class="europa" width="160px" src="./images/competition-logos/UEFA_Europa_League_2024.png" alt="europa-league-logo">
+                </div>
+                <p class="match-date">Thu May 8 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> 4 - 1 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/athletic-club-bilbao-logo-removebg-preview.PNG" alt="athletic-club-logo">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status win"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/europa-league/knockout-round-play-offs/manchester-united-vs-athletic-club/1461486/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+            <div class="match-card">
+                <div class="competition-logo">
+                    <img width="160px" src="./images/competition-logos/Premier-League-logo.jpg" alt="Premier-League-logo">
+                </div>
+                <p class="match-date">Sun Apr 6 2025</p>
+                <div class="result-container">
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/manchester_United_F.C.-Logo.wine.PNG" alt="man-utd">
+                    </div>
+                    <p class="result"> 0 - 0 </p>
+                    <div class="club-logo">
+                        <img width="50px" src="./images/club-logos/man-city-logo-removebg-preview.PNG" alt="man-city">
+                    </div>
+                </div>
+                <p class="match-status">FT</p>
+                <div class="win-status draw"></div>
+                <!-- find redirecting icon and put it here -->
+                <a href="https://www.livescore.com/en/football/england/premier-league-2024-2025/manchester-united-vs-manchester-city/1250891/" target="_blank">
+                    <button class="stat-button">
+                        MATCH REVIEW
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="yt-video">
+        <h2>WHAT'S NEW</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BFkWvuPxVfY?si=_YV0HWwIgZl12pS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h1>The Reds Clashed With Leeds Utd: Cunha Impressed With His Agressiveness!</h1>
+    </section>
+
+    <section class="articles">
+        <div class="article-container">
+            <!-- mbuemo to united -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/mbeumo-pic.webp" alt="mbeumo-to-utd">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Deal Areed For Mbeumo</h1>
+                    <p>Manchester United are set to complete the signing of Bryan Mbeumo for £70 million...</p>
+                    <a href="https://www.espn.com/soccer/story/_/id/45768381/man-united-transfers-deal-agreed-bryan-mbeumo-sources" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- cunha and leon debut -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/cunha-and-leon.webp" alt="">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Cunha and Leon's Debut</h1>
+                    <p>Just over 45,000 fans at Stockholm's Strawberry Arena and those watching on MUTV were treated to...</p>
+                    <a href="https://www.manutd.com/en/news/detail/how-did-matheus-cunha-and-diego-leon-do-in-first-game-for-man-utd" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- cunha to united -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/cunha-to-utd.jpg" alt="cunha-to-utd">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Cunha to United</h1>
+                    <p>The 26 year-old Brazil international forward has signed a contract until June 2030, with the option of...</p>
+                    <a href="https://www.manutd.com/en/news/detail/matheus-cunha-signs-for-man-utd-from-wolves", target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- old trafford regeneration -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/old-trafford-reg.webp" alt="oldtrafford regeneration">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Old Trafford Regeneration</h1>
+                    <p>The Old Trafford Regeneration Task Force has completed its initial feasibility work into options for a new...</p>
+                    <a href="https://www.manutd.com/en/news/detail/old-trafford-regeneration-task-force-update-on-17-january-2025" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- licha recovers -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/lisandro-image.jpg" alt="licha-recovery">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Licha returning from injury</h1>
+                    <p>Man Utd defender Lisandro Martinez is aiming to return early for next season as he...</p>
+                    <a href="https://www.skysports.com/football/news/11095/13380428/man-utd-defender-lisandro-martinez-working-hard-to-return-from-injury-as-early-as-possible-next-season" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- man utd new kit -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/new-kit.png" alt="man utd new kit">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Man Utd release 2025-26 home kit</h1>
+                    <p>The club says it has been inspired by Old Trafford and features different shades of red to signify...</p>
+                    <a href="https://www.bbc.com/sport/football/articles/c626ynk3dk6o" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- man utd's away kit -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/Joshua-Zirkzee-Man-Utd-away-kit-release-202526.avif" alt="man utd's away kit">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>United release adidas away kit</h1>
+                    <p>Adidas and Manchester United unveil the new away kit for the 2025/26 season, featuring the iconic snowflake graphic which...</p>
+                    <a href="https://www.manutd.com/en/news/detail/man-utd-release-adidas-away-kit-for-2025-26-season" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- europa leauge loss -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/bruno-eruopa-league-cup-close.avif" alt="bruno passing by trophy">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>Report: Spurs 1 United 0</h1>
+                    <p>Manchester United suffered a painful 1-0 defeat in Europa League Final...</p>
+                    <a href="https://www.manutd.com/en/news/detail/match-report-spurs-v-man-utd-2025-europa-league-final" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+            <!-- man utd's disastrous season -->
+            <article>
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="./images/article-imgs/man-utd-squad.jpg" alt="man utd squad">
+                    </div>
+                    <div class="article-overlay"></div>
+                </div>
+                <div class="article-text">
+                    <h1>15'th finish in the Premier League</h1>
+                    <p>The Red Devils continue to sink to new depths in a post-Sir Alex Ferguson world. Such plummets, like those...</p>
+                    <a href="https://www.si.com/soccer/stats-behind-man-utd-historically-bad-2024-25-season" target="_blank">
+                        <button class="read-more-button">Read More</button>
+                    </a>
+                </div>
+            </article>
+        </div>
+        <a href="https://www.manutd.com/en" target="_blank">
+            <button class="more-articles-button">More Articles</button>
+        </a>
+    </section>
+
+    <section class="sponsors">
+        <div class="sponsor-slider">
+            <div class="slider-img-container i1">
+                <img class="i1" src="./images/sponsor-logos/adidas-black-logo-removebg-preview.PNG" alt="addidas logo">
+            </div>
+            <div class="slider-img-container i2">
+                <img class="i2" src="./images/sponsor-logos/INEOS_logo.png" alt="ineos logo">
+            </div>
+            <div class="slider-img-container i3">
+                <img class="i3" src="./images/sponsor-logos/snapdragon-logo.PNG" alt="snapdragon-logo">
+            </div>
+            <div class="slider-img-container i4 pad">
+                <img class="i4" src="./images/sponsor-logos/TeamViewer-logo.PNG" alt="TeamViewer-logo">
+            </div>
+            <div class="slider-img-container i5 pad">
+                <img class="i5" src="./images/sponsor-logos/Konami_logo.png" alt="Konami_logo">
+            </div>
+            <div class="slider-img-container i6">
+                <img class="i6" src="./images/sponsor-logos/Apollo_logo.png" alt="appolo logo">
+            </div>
+            <div class="slider-img-container i7">
+                <img class="i7" src="./images/sponsor-logos/DHL_logo.png" alt="DHL logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- button to go to top of the page -->
+    <a class="to-top" href="#top">
+        »
+    </a>
+
+    <footer>
+        <div class="upper-footer">
+            <a href="https://www.manutd.com/en" target="_blank">MUFC</a>
+            <a href="https://www.ineos.com/" target="_blank">INEOS</a>
+            <a href="./pages/contact.html">Contact us</a>
+            <a href="">Author</a>
+            <a href="https://github.com/boanergaes/MUFC/blob/main/README.md#attributions" target="_blank">Attributions</a>
+        </div>
+        <div class="hr-c">
+            <hr>
+        </div>
+        <div class="lower-footer">
+            <div class="about-me">
+                <p>Zeamanuel Mebit</p>
+                <p>boanergaes</p>
+                <a href="https://my-portfolio-three-nu-23.vercel.app/" target="_blank">
+                    Checkout my portfolio ->
+                </a>
+            </div>
+            <div class="cont-cpryt">
+                <div class="contacts">
+                    <a href="" target="_blank">
+                        <img src="./images/social-logos/github-logo-white.png" alt="github-logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./images/social-logos/instagram-logo-white-logo-instagram-png-putih-transparent-removebg-preview.PNG" alt="instagram logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./images/social-logos/linkedin-square-white-icon-transparent-png-701751694974206tsxnbf2rft-removebg-preview.PNG" alt="linkedin logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./images/social-logos/telegram-icon-removebg-preview.png" alt="telegram logo">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./images/social-logos/twitter-x-logo-white-logo-icon-hd-png-11690219118qg0z3hfxjk-removebg-preview.PNG" alt="twitter logo">
+                    </a>
+                </div>
+                <p class="copyryt">
+                    © 2025 • feel free to fork and build upon this
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- header is hear because when is to make sure everything goes under it. -->
+    <!-- .upper header is position: fixed; -->
+    <header>
+        <div class="upper-header">
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a class="curr-page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/NaP.html">Old Trafford</a>
+                    </li>
+                    <li>
+                        <a href="./pages/players.html">Squad</a>
+                    </li>
+                    <li>
+                        <a href="./pages/NaP.html">Trophies</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- will replace the nav bar for small screen -->
+            <div class="menu-section">
+                <button class="menu">
+                    <img src="./images/icons/menu-bar-white-removebg-preview.png" alt="menu-icon">
+                </button>
+            </div>
+
+            <!-- <div class="logo-section"> -->
+            <a href="index.html" class="logo">MUFC</a>
+            <!-- </div> -->
+        </div>
+    </header>
+</body>
+</html>
