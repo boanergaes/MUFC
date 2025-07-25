@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUFC/NaP</title>
+    <title>MUFC/contact us</title>
     <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/Nap.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <section class="lower-header">
@@ -40,17 +40,51 @@
         </div>
     </section>
 
-    <section class="cta">
-        <div class="cta-card">
-            <h1>Not Built Yet!</h1>
-            <p>
-                Sorry! this page is not built yet. 
-                <a href="contact.html">Contact us</a> or...
-            </p>
-            <a class="button" href="players.html">
-                Checkout the Squad page instead ->
-                <div class="color-slider"></div>
-            </a>
+    <section class="form-section">
+        <div class="form-wrapper">
+            <div class="welcome">
+                <div class="welcome-text">
+                    <h1>Hello there,</h1>
+                    <p>Want to send an email?</p>
+                </div>
+                <h1 class="club">MUFC
+                    <div class="rounder up">
+                        <div class="inner up"></div>
+                    </div>
+                    <div class="rounder down">
+                        <div class="inner down"></div>
+                    </div>
+                </h1>
+            </div>
+
+            <form action="">
+                <label for="name">Full Name *</label><br>
+                <input type="text" id="name" name="name" placeholder="Your response" size="22" required>
+    
+                <br><br>
+    
+                <label for="email">Email *</label><br>
+                <input type="email" id="email" name="email" placeholder="yourEmail@gmail.com" size="22" required>
+    
+                <br><br>
+    
+                <label for="usrname">Telegram Username</label><br>
+                <input type="text" name="usrname" id="usrname" placeholder="@username" size="22">
+    
+                <br><br>
+    
+                <input class="check" type="checkbox" name="isFan" id="isFan">
+                <label for="isFan">Man Utd fan?</label>
+    
+                <br><br>
+    
+                <label for="msg">Message *</label><br>
+                <textarea name="msg" id="msg" required></textarea>
+
+                <br><br>
+
+                <input class="submit" type="submit" name="manUCont" id="manUCont">
+            </form>
         </div>
     </section>
 
@@ -115,7 +149,7 @@
                         <a href="NaP.html">Trophies</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact us</a>
+                        <a class="curr-page" href="contact.html">Contact us</a>
                     </li>
                 </ul>
             </nav>

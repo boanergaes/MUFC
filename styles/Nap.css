@@ -1,9 +1,9 @@
-section {
+section.cta {
     height: 100dvh;
     display: flex;
     align-items: center;
     padding-left: 20%;
-    background-image: url(../images/bg-imgs/kobbie-and-team-celebration.jpg);
+    background-image: url(../images/bg-imgs/old-trafford-stadium.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,10 +23,18 @@ section * {
     padding: 30px 70px;
     border-radius: 12px;
     box-shadow: 1px 2px 5px rgba(0,0,0,1);
-    background-image: linear-gradient(-45deg, rgb(35, 31, 31), rgb(107, 46, 29), rgb(201, 49, 7));
+    background-image: linear-gradient(-135deg,  rgb(201, 49, 7), rgb(107, 46, 29), rgb(35, 31, 31));
 }
 
-.cta-card a {
+.cta-card h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: #eee;
+}
+
+.cta-card a.button {
     display: block;
     text-decoration: none;
     color: black;

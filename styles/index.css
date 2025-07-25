@@ -42,7 +42,7 @@ section.hero {
     color: #eee;
     font-size: 1.1rem;
     margin-bottom: 50px;
-    background-image: url(../images/bg-imgs/old-trafford-stadium.webp);
+    background-image: url(../images/bg-imgs/kobbie-and-team-celebration.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -342,15 +342,82 @@ article h1 {
 
 .sponsor-slider {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3vw;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* gap: 3vw; */
     padding: 100px 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.sponsor-slider::before {
+    content: '';
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, white 40%, transparent);
+}
+.sponsor-slider::after {
+    content: '';
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to left, white 40%, transparent);
+}
+
+.slider-img-container {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    position: absolute;
+    right: -200px;
+    animation: slideLeft 7s linear infinite;
 }
 
 .sponsor-slider img {
     height: 36px;
     width: auto;
+}
+
+.pad {
+    /* i did this because two logos was sliding too close to each other. */
+    /* i don't know why it must be negative */
+    margin-right: -30px;
+}
+
+.i1 {
+    animation-delay: 0s;
+    padding-left: 10px;
+}
+.i2 {
+    animation-delay: 1s;
+}
+.i3 {
+    animation-delay: 2s;
+}
+.i4 {
+    animation-delay: 3s;
+}
+.i5 {
+    animation-delay: 4s;
+}
+.i6 {
+    animation-delay: 5s;
+}
+.i7 {
+    animation-delay: 6s;
+}
+
+@keyframes slideLeft {
+    to {
+        translate: -1700px;
+    }
 }
 
 /* queries for you tube video */

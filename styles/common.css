@@ -13,6 +13,10 @@ body {
     font-size: clamp(1rem, );
 }
 
+h1, h2, h3 {
+    font-family: Agdasima, sans-serif;
+}
+
 button {
     cursor: pointer;
 }
@@ -22,18 +26,6 @@ button {
 header {
     position: sticky;
     top: 0;
-}
-
-
-/* !!!!!! REMOVE THIS !!!!!! */
-.above-all {
-    display: none;
-    height: 110px;
-    background-color: white;
-    background-image: url(../images/bg-imgs/old-trafford-stadium.webp);
-    background-position: center;
-    background-size: cover;
-    border-image: fill 1 linear-gradient(hsla(0, 0%, 0%, .1), hsla(0, 0%, 0%, .6));
 }
 
 header a {
@@ -101,7 +93,7 @@ header a {
     border-radius: 0 0 15px;
 }
 
-    /* lower section of the header */
+    /*===== lower section of the header ======*/
 
 .lower-header {
     position: relative;
@@ -126,10 +118,13 @@ header a {
     background: none;
     border: none;
     transition: transform .15s linear;
+    padding: 0;
+    margin: 0;
 }
 
 .lower-header button:hover {
     transform: scale(1.07);
+    background: none;
 }
 
 .lower-header button img {
@@ -137,7 +132,7 @@ header a {
     height: auto;
 }
 
-input {
+.lower-header input {
     padding: 2px 16px;
     width: 46%;
     border: none;
@@ -147,7 +142,7 @@ input {
     font-size: .95rem;
 }
 
-input:focus {
+.lower-header input:focus {
     background-color: white;
 }
 
@@ -278,6 +273,7 @@ hr {
     background-image: linear-gradient(to top right, black, red);
     box-shadow: 0 0 4px red;
     color: white;
+    z-index: 10;
 }
 .to-top:hover {
     animation: upDown 1.4s linear infinite;
