@@ -27,9 +27,9 @@ With this project, I re-eforced the basic HTML and CSS concepts and it especiall
         |   |-players.css
         |   |-Nap.css
 
-# attributions:
+# Attributions:
 
-## icons:
+## Icons:
     - menu-icon: 
 Icon by <a class="link_pro" href="https://freeicons.io/business-and-online-icons/menu-icon-icon">Raj Dev</a> on <a href="https://freeicons.io">freeicons.io</a>
 
@@ -49,7 +49,7 @@ I found all images except for the icons attributed above on a direct Google sear
 2. <a href="https://designer.microsoft.com/">Microsoft Design</a>: to edit and crop pictures.
 3. Git, GitHub, VsCode
 
-## article links:
+## Article links:
 
 -cunha to utd - mun: <a href="https://www.manutd.com/en/news/detail/matheus-cunha-signs-for-man-utd-from-wolves">Source</a>
 
