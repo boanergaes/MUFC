@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Agdasima:wght@400;700&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Agdasima:wght@400;700&family=Alfa+Slab+One&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Agdasima:wght@400;700&family=Alfa+Slab+One&family=Anton&display=swap');
 
 /* properties common all over the page */
 
@@ -58,7 +60,7 @@ section.hero {
 
 .hero-text h1 {
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Anton, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: clamp(3.8rem, 11vw, 6rem);
 }
 
@@ -345,7 +347,8 @@ article h1 {
     /* justify-content: center; */
     /* flex-wrap: wrap; */
     /* gap: 3vw; */
-    padding: 100px 5%;
+    padding: 45px 5%;
+    margin-top: 60px;
     overflow: hidden;
     position: relative;
 }
