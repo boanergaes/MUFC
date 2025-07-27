@@ -26,6 +26,16 @@ button {
 header {
     position: sticky;
     top: 0;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 10%);
+    padding: 20px min(4rem, 5%);
+    gap: 6rem;
 }
 
 header a {
@@ -34,16 +44,10 @@ header a {
 }
 
 .upper-header {
-    top: 0;
-    position: fixed;
-    z-index: 10;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(0, 0%, 10%);
-    padding: 20px min(4rem, 5%);
-    gap: 6rem;
 }
 
 /* appear in @media */
