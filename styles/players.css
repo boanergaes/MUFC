@@ -247,6 +247,21 @@ h1, h2 {
     font-size: 1.2rem;
 }
 
+table {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(0, 0%, 17%);
+}
+td:first-child {
+    font-weight: 700;
+}
+td {
+    padding: 10px 20px;
+}
+
 @media screen and (max-width: 1220px) {
     .pitch-container {
         align-items: start;
@@ -335,6 +350,7 @@ h1, h2 {
         position: absolute;
         top: 250px;
     }
+    
     .main .bench {
         position: absolute;
         top: 870px;
@@ -364,6 +380,6 @@ h1, h2 {
 
     footer {
         position: absolute;
-        top: 2560px;
+        top: 2830px;
     }
 }

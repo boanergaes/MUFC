@@ -23,11 +23,13 @@ section * {
     padding: 30px 70px;
     border-radius: 12px;
     box-shadow: 1px 2px 5px rgba(0,0,0,1);
-    background-image: linear-gradient(-135deg,  rgb(201, 49, 7), rgb(107, 46, 29), rgb(35, 31, 31));
+    /* background-image: linear-gradient(-135deg,  rgb(201, 49, 7), rgb(107, 46, 29), rgb(35, 31, 31)); */
+    background-color: hsl(0, 0%, 22%);
 }
 
 .cta-card h1 {
     font-size: 2rem;
+    color: red;
 }
 
 a {
@@ -45,7 +47,7 @@ a {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    transition: background-color .7s linear,
+    transition: all .7s linear,
         color .7s linear,
         scale .7s linear;
 }
@@ -53,7 +55,7 @@ a {
 .cta-card a:hover {
     scale: 1.05;
     background-color: transparent;
-    /* border-color: #eee; */
+    border-color: #eee;
     color: #eee;
 }
 
@@ -82,6 +84,9 @@ a {
     animation: slideRight 1.8s linear infinite;
 }
 
+.cta-card a:hover .color-slider {
+    display: none;
+}
 
 @media screen and (max-width: 670px) {
     section {
